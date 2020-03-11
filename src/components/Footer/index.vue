@@ -17,9 +17,9 @@ export default {
     display: flex;
     width: 100%;
     height: 45px;
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     align-items: center;
     justify-content: space-around;
     border-top: 1px solid #f1f1f1;

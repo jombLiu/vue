@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <div class="container">
     <Header title="哈希电影" />
-    <ol class="movie-nav">
-      <router-link tag="li" to="/movie/city">西安</router-link>
-      <router-link tag="li" to="/movie/nowPlaying">正在热映</router-link >
-      <router-link tag="li" to="/movie/comingSoon">即将上映</router-link >
-      <router-link tag="li" to="/movie/searchMovie">搜索</router-link >
-    </ol>
-    <keep-alive>
-      <router-view />
-    </keep-alive>
+    <div class="content">
+      <ol class="movie-nav">
+        <router-link tag="li" to="/movie/city">西安</router-link>
+        <router-link tag="li" to="/movie/nowPlaying">正在热映</router-link>
+        <router-link tag="li" to="/movie/comingSoon">即将上映</router-link>
+        <router-link tag="li" to="/movie/searchMovie">搜索</router-link>
+      </ol>
+      <keep-alive>
+        <router-view />
+      </keep-alive>
+    </div>
     <Footer />
   </div>
 </template>
@@ -33,6 +35,9 @@ export default {
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid #f1f1f1;
+  width: 100%;
+  /* position: fixed;
+  top: 45px; */
 }
 .movie-nav li {
   border-bottom: 2px solid transparent;
