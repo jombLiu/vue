@@ -70,3 +70,19 @@ a{outline: none;transition: color 0.2s ease 0s;}/*CSS3链接秒数缓冲效果2�
 /* 层板块缓冲效果CSS3       transition: all 0.3s ease 0s;   */
 .clearfix {zoom:1}
 .clearfix:after {content: '\20'; display: block; clear: both;}
+
+/* common css */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
