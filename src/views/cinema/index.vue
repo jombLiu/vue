@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Header />
+    <Header title="哈希影院"/>
+    <div>Hello Cinema</div>
     <Footer />
   </div>
 </template>
